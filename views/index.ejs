@@ -1,0 +1,19 @@
+<%- include header %>
+<% if (!user) { %>
+	<div class="jumbotron">
+		<div class="container">
+			<h1>Hello, everyone</h1>
+			<p>This is my practive for node.js. It is just for learning.</p>
+			<p><a class="btn btn-primary btn-lg" role="button" href = '/login'>login &raquo;</a>
+        		<a class="btn btn-primary btn-lg" role="button" href = '/reg'>sign up &raquo;</a>
+      		</p>
+		</div>
+	</div>
+<% } else { %>
+  <%- include say %>
+<% } %>
+<%- include posts %>
+
+    <div class="container">
+      <!-- Example row of columns -->
+<%- include footer %>
